@@ -1,21 +1,5 @@
-body{
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-    }
+body { padding-bottom: 80px; }
 
-    .container{
-        width: 100%;
-        margin: 0 auto;
-        padding: 0;
-        
-    }
+.footer { background-color: #5398dd; padding: 20px 0; width: 100%; 
 
-    .footer{
-        width: 100% vh;
-        height: 70px vh;
-        background-color: #000000;
-        color: rgb(247, 223, 10);
-        text-align: center;
-        padding-top: 1em ;
-        font-size: 2em;
-    }
+}
