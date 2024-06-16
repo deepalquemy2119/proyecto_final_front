@@ -1,4 +1,7 @@
-body { padding-bottom: 80px; }
+body { padding-bottom: 80px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
 
 .footer { background-color: #90e694; padding: 20px 0; width: 100%; 
 
