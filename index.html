@@ -7,10 +7,10 @@
 
     <!-- ------------ GOOGLE FONTS ------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!--  ----------- Bootstrap ----------- -->
+    <!--  ------------- Bootstrap -------------- -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- ----------- Local CSS ------------ -->
@@ -18,36 +18,73 @@
 </head>
 <body>
 
-    <!-- ------------------ Content ------------------------- -->
-    <header class="container text-center py-4">
+<header class="container text-center py-4">
         <h1 class="welcome">Welcome to Robot World</h1>
         <p class="mb-0">
 
         <!-- ------- LOGIN -------- -->
             <a class="login" href="./public/views/login.html">Login</a>
-            <span class="mx-2">or</span>
+            <span class="mx-2"> or </span>
         
         <!-- ------ REGISTER ------ -->
             <a class="register" href="./public/views/register.html">Register</a>
         </p>
     </header>
-        <!-- <aside class="aside-izq">
 
-        </aside>
+        <!-- ----- ASIDE IZQUIERDA ------ -->
+    <aside class="aside-izq">
+        <p>Hola mundo</p>
+        <h3>Informes</h3>
+        <a href="#">Llevame</a>
+    </aside>
+        <!-- -------------------- MAIN --------------------- -->
+        <main class="container mt-4">
+            <!-- ---------- BOTONES CARRUSEL ---------- -->
+                <div class="boton-carr-back">
+                    <button type="button" class="active" >back</button>
+                </div>
+    
+    <!-- ---------------------- CARRUSEL ------------------------ -->
+                <div class="carousel-inner">
+                    <!-- ----- IMG- ZEBRA ----- -->
+                    <div class="carousel-item">
+                        <img src="./public/images/carrusel-img/zebra-robotics.png" class="d-block w-100" alt="zebra">
+                    </div>
+    
+    
+                    <!-- ----- IMG- Teradyne ----- -->
+                    <div class="carousel-item">
+                        <img src="./public/images/carrusel-img/teradyne-robotics.png" class="d-block w-100" alt="rockwell">
+                    </div>
+    
+                    <!-- ----- IMG- Rockwell ----- -->
+                    <div class="carousel-item">
+                        <img src="./public/images/carrusel-img/rockwell-robotics.png" class="d-block w-100" alt="fanuc">
+                    </div>
+    
+                    <!-- ----- IMG- Fanuc ----- -->
+                    <div class="carousel-item">
+                        <img src="./public/images/carrusel-img/fanuc-robotics.png" class="d-block w-100" alt="eds">
+                    </div>
+    
+                    <!-- ----- IMG- Boston ----- -->
+                    <div class="carousel-item">
+                        <img src="./public/images/carrusel-img/boston-dynamics.png" class="d-block w-100" alt="boston">
+                    </div>
+                </div>
+    
+                <!-- ---------- BOTON CARRUSEL ---------- -->
+                <div class="boton-carr-next">
+                    <button type="button" class="active" >next</button>
+                </div>
+        </main>
+    
+        <!-- --- ASIDE DERECHA ------ -->
         <aside class="aside-der">
-
-        </aside> -->
-<!-- ------------- CARRUSEL ------------- -->
-<section class="carrusel">
-    <div class="carousel-inner">
-        <button class="carousel-control prev">&lt;</button>
-            <img src="./public/images/carrusel-img/boston-dynamics.png" alt="boston">
-            <img src="./public/images/carrusel-img/fanuc-robotics.png" alt="fanuc">
-            <img src="./public/images/carrusel-img/rockwell-robotics.png" alt="rockwell">
-            <img src="./public/images/carrusel-img/teradyne-robotics.png" alt="teradyne">
-        <button class="carousel-control next">&gt;</button>
-    </div>
-</section>
+            <p>Chauuu Mundoooo</p><br>
+            <h3>Noticias</h3>
+            <a href="#">llevame</a>
+        </aside>
 
     <!-- ------------------------- Footer ------------------------ -->
     <footer class="footer fixed-bottom text-center">

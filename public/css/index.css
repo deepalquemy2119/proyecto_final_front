@@ -3,14 +3,46 @@ body { padding-bottom: 80px;
     font-optical-sizing: auto;
 }
 
+.welcome{ 
+  background-color: #90e694; 
+  padding: 12px 0; width: 100%;
+  align-content:normal; }
+
 img{
-  border-color: blue;
+  border-color: rgb(209, 61, 61);
   border-style: solid;
   border-width: 3px;
   padding: 3px;
-  max-width: 350px;
+  max-width: 280px;
   max-height: 150px;
 }
+
+
+/* -------------- ASIDE -------------- */
+/* Estilos aside */
+.aside-izq,
+.aside-der {
+    width: 100%;
+    padding: 10px;
+    background-color: #d3caca;
+    margin-bottom: 20px;
+}
+
+/* Estilos aside  pantalla grande */
+@media (min-width: 768px) {
+    .aside-izq,
+    .aside-der {
+        width: 25%;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .aside-der {
+        margin-right: 0; 
+        float: right; 
+    }
+}
+
 
 
 .footer { background-color: #90e694; padding: 20px 0; width: 100%; 
