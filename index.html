@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<header class="container text-center py-4">
+<header class="container-fluid text-center py-4">
         <h1 class="welcome">Welcome to Robot World</h1>
         <p class="mb-0">
 
@@ -31,72 +31,94 @@
         </p>
     </header>
 
+
+    
+
+
         <!-- ----- ASIDE IZQUIERDA ------ -->
-    <aside class="aside-izq">
-        <p>Hola mundo</p>
-        <h3>Informes</h3>
-        <a href="#">Llevame</a>
+    <aside class="aside-izq col-md-3">
+        <h3>Noticias</h3>
+           <p>Muestra noticias del mes 
+            en curso según foto 
+            de empresa seleccionada</p><br>
+                <a href="#">llevame</a>
     </aside>
+
         <!-- -------------------- MAIN --------------------- -->
-        <main class="container mt-4">
-            <!-- ---------- BOTONES CARRUSEL ---------- -->
+        <main class="container-fluid mt-4">
+            <!-- BOTONES CARRUSEL back -->
                 <div class="boton-carr-back">
                     <button type="button" class="active" >back</button>
                 </div>
     
-    <!-- ---------------------- CARRUSEL ------------------------ -->
+            <!-- ------ CARRUSEL ------ -->
                 <div class="carousel-inner">
                     <!-- ----- IMG- ZEBRA ----- -->
                     <div class="carousel-item">
-                        <img src="./public/images/carrusel-img/zebra-robotics.png" class="d-block w-100" alt="zebra">
+                        <img src="./public/images/carrusel-img/zebra-ok.png" class="d-block w-80" alt="zebra-tecnologics">
                     </div>
     
     
-                    <!-- ----- IMG- Teradyne ----- -->
+                    <!-- --- IMG- Teradyne --- -->
                     <div class="carousel-item">
-                        <img src="./public/images/carrusel-img/teradyne-robotics.png" class="d-block w-100" alt="rockwell">
+                        <img src="./public/images/carrusel-img/teradyne-ok.png" class="d-block w-80" alt="teradyne-robotics">
                     </div>
     
-                    <!-- ----- IMG- Rockwell ----- -->
+                    <!-- --- IMG- Rockwell --- -->
                     <div class="carousel-item">
-                        <img src="./public/images/carrusel-img/rockwell-robotics.png" class="d-block w-100" alt="fanuc">
+                        <img src="./public/images/carrusel-img/rockwell-ok.png" class="d-block w-80" alt="rockwell-tecnologics">
                     </div>
     
-                    <!-- ----- IMG- Fanuc ----- -->
+                    <!-- --- IMG- Fanuc --- -->
                     <div class="carousel-item">
-                        <img src="./public/images/carrusel-img/fanuc-robotics.png" class="d-block w-100" alt="eds">
+                        <img src="./public/images/carrusel-img/fanuc-ok.png" class="d-block w-80" alt="fanuc-robotics">
                     </div>
     
-                    <!-- ----- IMG- Boston ----- -->
+                    <!-- --- IMG- Boston --- -->
                     <div class="carousel-item">
-                        <img src="./public/images/carrusel-img/boston-dynamics.png" class="d-block w-100" alt="boston">
+                        <img src="./public/images/carrusel-img/boston-ok.png" class="d-block w-80" alt="boston-dynamics">
                     </div>
                 </div>
     
-                <!-- ---------- BOTON CARRUSEL ---------- -->
+                <!-- BOTON CARRUSEL next -->
                 <div class="boton-carr-next">
                     <button type="button" class="active" >next</button>
                 </div>
+
+        
         </main>
     
+        
+
         <!-- --- ASIDE DERECHA ------ -->
         <aside class="aside-der">
-            <p>Chauuu Mundoooo</p><br>
-            <h3>Noticias</h3>
-            <a href="#">llevame</a>
+           <h3>Cotizacion</h3>
+           <p>Muestra valores del día 
+            en curso según foto 
+            de empresa seleccionada</p><br>
+                    <a href="#">llevame</a>
+            
         </aside>
 
     <!-- ------------------------- Footer ------------------------ -->
     <footer class="footer fixed-bottom text-center">
+        
+        <!-- --------- ICONOS -------- -->
+    <a href="https://www.gmail.com/" target="_blank"><img class="img-icon" src="./public/images/icons/gmail-foto.png" alt="gmail"></a>
+    <a href="https://pinterest.com/" target="_blank"><img class="img-icon" src="./public/images/icons/pinterest-foto.png" alt="pinterest"></a>
+    <a href="https://www.whatsapp.com/" target="_blank"><img class="img-icon" src="./public/images/icons/whatsapp-foto.png" alt="whatsapp"></a>
+    <a href="https://www.youtube.com/" target="_blank"><img class="img-icon" src="./public/images/icons/youtube-foto.png" alt="youtube"></a>
+
+                <!-- .-------- ABOUT ------- -->
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-12">
                     <a class="about" href="#">About</a>
-                    
+                <!-- --------- Contact ------ -->
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <a class="contact" href="#">Contact</a>
-                    
+                <!-- ------- Follow Us ------ -->
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <a class="follow" href="#">Follow us</a>

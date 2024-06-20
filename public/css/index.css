@@ -1,45 +1,79 @@
-body { padding-bottom: 80px;
+body { 
+    font-size: 16px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
+    padding-bottom: 80px;
+   
+}
+
+
+
+h3{
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
 }
 
 .welcome{ 
   background-color: #90e694; 
-  padding: 12px 0; width: 100%;
-  align-content:normal; }
+  padding: 8px; 
+  margin: 12px;
+  width: 100%; }
 
 img{
-  border-color: rgb(209, 61, 61);
-  border-style: solid;
-  border-width: 3px;
-  padding: 3px;
-  max-width: 280px;
-  max-height: 150px;
+    border-width: 3px;
+    padding: 3px;
+    max-width: 100%; 
+    height: auto;
+}
+
+.img-icon{
+    width: 40px;
+    height: 40px;
 }
 
 
 /* -------------- ASIDE -------------- */
-/* Estilos aside */
-.aside-izq,
-.aside-der {
-    width: 100%;
-    padding: 10px;
-    background-color: #d3caca;
-    margin-bottom: 20px;
+.aside-izq, .aside-der {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+        background-color: #d3caca;
+        
+        margin: 5px;
 }
 
 /* Estilos aside  pantalla grande */
 @media (min-width: 768px) {
-    .aside-izq,
-    .aside-der {
-        width: 25%;
-        float: left;
-        margin-right: 20px;
+            .aside-izq,
+            .aside-der {
+                width: 25%;
+                float: left;
+                margin-right: 10px;
+                height: auto; 
+
     }
 
     .aside-der {
-        margin-right: 0; 
+        margin-right: 5px; 
         float: right; 
+    }
+}
+
+/*Tamaño para tabletas */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Tamaños para celulares */
+@media (max-width: 576px) {
+    body {
+        font-size: 11px;
     }
 }
 
