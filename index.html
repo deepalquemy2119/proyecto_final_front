@@ -21,22 +21,20 @@
 </head>
 <body>
 
-<header class="container-fluid text-center py-4">
-        <h1 class="welcome">Welcome to Robot World</h1>
+<header class="container-fluid text-center">
+        <h1 class="welcome ">Welcome to Robot World</h1>
         <p class="mb-0">
 
+        <div class= "log-reg">
         <!-- ------- LOGIN -------- -->
             <a class="login" href="./public/views/login.html">Login</a>
             <span class="mx-2"> or </span>
         
         <!-- ------ REGISTER ------ -->
             <a class="register" href="./public/views/register.html">Register</a>
+        </div>
         </p>
     </header>
-
-
-    
-
 
         <!-- ----- ASIDE IZQUIERDA ------ -->
     <aside class="aside-izq col-md-3">
@@ -47,13 +45,6 @@
                 <a href="#">llevame</a>
     </aside>
 
-        <!-- -------------------- MAIN --------------------- -->
-    <!-- BOTONES CARRUSEL back -->
-    <!-- <div class="boton-carr-back">
-        <button type="button" class="active" >back</button>
-    </div> -->
-
-        <!-- <main class="container-fluid mt-6"> -->
             
             <div class="swiffy-slider">
                 <ul class="slider-container">
@@ -92,35 +83,24 @@
                 </ul>
 
 
-            <button type="button" class="slider-nav"></button>
-            <button type="button" class="slider-nav slider-nav-next"></button>
+            <button type="button" class="slider-nav"><h5></h5></button>
+            <button type="button" class="slider-nav slider-nav-next"><h5></h5></button>
         
-            <div class="slider-indicators">
-                <button class="active"></button>
-                <button></button>
-                <button></button>
-            </div>
+        
         </div>
-        <!-- </main> -->
-
-        <!-- BOTON CARRUSEL next -->
-        <!-- <div class="boton-carr-next">
-            <button type="button" class="active" >next</button>
-        </div> -->
-
-    
+         
         
 
         <!-- --- ASIDE DERECHA ------ -->
         <aside class="aside-der">
-           <h3>Cotizacion</h3>
+           <h3>Noticias</h3>
            <p>Muestra valores del día 
             en curso según foto 
             de empresa seleccionada</p><br>
                     <a href="#">llevame</a>
             
         </aside>
-
+        
     <!-- ------------------------- Footer ------------------------ -->
     <footer class="footer fixed-bottom text-center">
         
@@ -132,7 +112,7 @@
 
                 
         <div class="container">
-            <div class="row">
+            <div class="enlaces col-md-3">
                 <!-- .-------- ABOUT ------- -->
                 <div class="col-md-4 col-sm-12">
                     <a class="about" href="#">About</a>
