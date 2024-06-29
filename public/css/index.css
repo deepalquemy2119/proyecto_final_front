@@ -4,9 +4,7 @@ body {
     font-optical-sizing: auto;
     padding-bottom: 80px;
     background-color: rgb(224, 162, 46);
-    /* background-image: url("..//images/robotica-para-niños.png");
-    background-repeat: no-repeat;
-    background-size:auto; */
+
 }
 
 .log-reg{
@@ -46,37 +44,11 @@ p {
 }
 
 .img-icon{
+    align-items: center;
     width: 40px;
     height: 40px;
 }
 
-
-/* -------------- ASIDE -------------- */
-.aside-izq, .aside-der {
-        display: flex;
-        flex-direction: column;
-        width: calc(25% - 20px);
-        padding: 10px;
-        /* background-color: #ff7777; */
-        margin: 0 10px 10px 0;
-}
-
-/* Estilos aside  pantalla grande */
-@media (min-width: 768px) {
-            .aside-izq,
-            .aside-der {
-                width: 25%;
-                float: left;
-                margin-right: 10px;
-                height: auto; 
-
-    }
-
-    .aside-der {
-        margin-right: 5px; 
-        float: right; 
-    }
-}
 
 /*Tamaño para tabletas */
 @media (max-width: 768px) {
@@ -98,10 +70,6 @@ p {
     background-color: white;
     padding: 20px 0;
     margin: 0 10px;
-  /*  width: 100%;
-     position: relative;
-    z-index: 1; */
-
 }
 
 a{ color: rgb(3, 3, 3); text-decoration: none; }
@@ -109,10 +77,10 @@ a{ color: rgb(3, 3, 3); text-decoration: none; }
 
 /* -------------- Botones del Carrusel ------------- */
 
-.swiffy-slider {
-    position: relative;
+.carr {
     display: flex;
-    flex-direction: column;
+    position: relative;    
+    flex-direction: row;
     align-items: center;
     margin-top: 20px;
 }
@@ -120,21 +88,19 @@ a{ color: rgb(3, 3, 3); text-decoration: none; }
 .slider-nav {
     margin-top: 10px;
     padding: 8px 16px;
-    /* background-color: #007bff;
-    color: red; */
     border: none;
     cursor: pointer;
 }
 
 /* Para diferentes pantallas */
 @media (max-width: 768px) {
-    .swiffy-slider {
+    .carr {
         margin-top: 10px;
     }
 }
 
 @media (max-width: 576px) {
-    .swiffy-slider {
+    .carr {
         margin-top: 5px;
     }
 }
