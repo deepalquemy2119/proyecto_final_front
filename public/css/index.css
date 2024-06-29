@@ -135,3 +135,9 @@ a{ color: rgb(3, 3, 3); text-decoration: none; }
         margin-top: 5px;
     }
 }
+
+.img-carr{
+    height:"100px";
+    width:"300px";
+    max-width: 100%;
+} 
