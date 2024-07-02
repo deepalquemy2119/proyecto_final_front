@@ -1,112 +1,217 @@
 body { 
     font-size: 16px;
+    overflow-x:hidden;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    padding-bottom: 80px;
-    background-color: rgb(224, 162, 46);
-
-}
-
-.log-reg{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    background-color: #cac9c9;
-}
-
-.enlaces{
-    padding: auto;
+    padding: 0px;
+    margin: 0px;
 }
 
 
-h3{
-    font-size: 1.5em;
-}
 
-h1{
-    font-size: 2.1em;
-    font-style: italic;
-}
+/* ---------------- HEADER ----------------- */
 
-p {
-    font-size: 1em;
-}
 
 .welcome {
-    background-color: white;
-    color: olivedrab;
-    padding: 20px;
     margin: 0;
+    padding: 0;
+    color: rgb(3, 1, 1);
 }
 
-.img-icon{
-    align-items: center;
-    width: 40px;
-    height: 40px;
+.title-h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: rgb(3, 1, 1);
+}
+
+header{
+    display: flex;
+    height: 100vh;
+    padding: 10;
+    text-align: center;
+    background-image: url('../video/video-boston.webm');
+}
+
+
+.header-text {
+    margin: 20px;
+    padding: 10px;
+    color: rgb(3, 1, 1);
+}
+
+.div-video {
+    position: absolute;
+    top: 20px;
+    left: 20;
+    width: 100%;
+    height: 100vh;
+    overflow:auto; 
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;    
+}
+
+.div-video {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* ----- PRUEBA ------ */
+
+/* .video {
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe, .video object, .video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+/* ----- PRUEBA ------ */
+
+
+.over {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    bottom: 20px;
+    background: #cbbecf;
+    z-index: 1;
+    opacity: .75;
+}
+
+.header-text {
+    z-index: 2;
+    /* background-color: #c43569; */
+    height: 117px;
+    width: 100%;
+}
+
+.header-text{
+    margin-bottom: 0;
+    
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+
+.header-text h1 h5 p {
+   font-size: 1rem;
+   display: block;
+   padding-bottom: 1.3rem; 
+}
+
+.header-text a {
+    background: #c43569;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+@media (max-width: 800px){
+    .content {
+        padding: 0 3rem 0 3rem;
+    }
 }
 
 
 /*Tamaño para tabletas */
 @media (max-width: 768px) {
-    body {
+    header {
+        background-position: center;
         font-size: 14px;
     }
 }
 
 /* Tamaños para celulares */
 @media (max-width: 576px) {
-    body {
+    header {
+        background-position: center;
         font-size: 11px;
     }
 }
 
+/* ----- Estilos del NavBar ------ */
 
-
-.footer {
-    background-color: white;
-    padding: 20px 0;
-    margin: 0 10px;
-}
-
-a{ color: rgb(3, 3, 3); text-decoration: none; }
-
-
-/* -------------- Botones del Carrusel ------------- */
-
-.carr {
+.navbar{
     display: flex;
-    position: relative;    
-    flex-direction: row;
-    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 193, 91);
+    position: sticky;
+    top: 0;
     margin-top: 20px;
 }
 
-.slider-nav {
-    margin-top: 10px;
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
+.navbar a {
+    padding: 12px 18px;
+    text-decoration: none;
 }
 
-/* Para diferentes pantallas */
-@media (max-width: 768px) {
-    .carr {
-        margin-top: 10px;
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    font-size: 20px;
+}
+
+.text-nav{
+    color:rgb(54, 10, 10);
+    height: 500;
+}
+
+@media (max-width: 380px) {
+    .navbar {
+        flex-direction: column;
+        position: unset;
+    }
+    .navbar a {
+        font-size: 14px;
+        padding: 5px 5px;
+        text-align: center;
     }
 }
 
-@media (max-width: 576px) {
-    .carr {
-        margin-top: 5px;
-    }
+.img-icon{
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
 }
 
-.img-carr{
-    height:"100px";
-    width:"300px";
-    max-width: 100%;
-} 
+
+/* ----------- FOOTER ----------- */
+.footer {
+    background-color:black;
+    color: #fffcfc;
+    width: 600;
+    text-align: center;    
+    padding: 10px;
+}
+
+
