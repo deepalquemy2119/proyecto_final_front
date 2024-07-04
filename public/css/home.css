@@ -23,20 +23,52 @@ video {
     display: flex;
     text-align: center;
     margin: 0 auto;
-
+    
     min-width: 100%;
     min-height: 100%;    
     height: auto;
     width: 100%;
+    
 } 
 
+
+
 /* --- Ajuste Videos Pantallas --- */
-@media (max-width: 720px) {
+@media (max-width: 1180px) {
+    .div-video{
+        width: 920px;
+        height: 720px;
+        margin: 0 auto;
+        padding: 8px;
+        top: 0;
+        left: 0; 
+        right: 0;            
+    }   
+}
+
+
+@media (max-width: 920px) {
+    .div-video{
+        width: 740px;
+        height: 520px;
+        margin: 0 auto;
+        padding: 8px;
+        top: 0;
+        left: 0; 
+        right: 0;    
+    }   
+}
+
+
+@media (max-width: 740px) {
     .div-video{
         width: 640px;
         height: 420px;
         margin: 0 auto;
-        padding: 12px;
+        padding: 8px;
+        top: 0;
+        left: 0;
+        right: 0;
     }   
 }
 
@@ -45,7 +77,10 @@ video {
         width: 420px;
         height: 240px;
         margin: 0 auto;
-        padding: 12px;
+        padding: 8px;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 }
 
@@ -54,7 +89,8 @@ video {
         width: 240px;
         height: 120px;
         margin: 0 auto;
-        padding: 12px;
+        padding: 8px;
+        right: 0;
     }
 }
 
