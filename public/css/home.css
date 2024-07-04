@@ -1,195 +1,111 @@
-
-/* 
-
-.content {
-    max-width: 40rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: auto;
-    text-align: center;
-} */
-/* header div{
-    padding: 10px;
-    border: 5px;
-    background-color: rgb(12, 61, 45, 0.7);
-    font-size: 1.2em;
-    background-image: linear-gradient(rgba(194, 62, 247, 0.340), rgb(255, 255, 255));
-    border-radius: 10px;
-    color: #fffcfc;
-} */
-
-/* 
-.enlaces{
-    padding: auto;
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
 }
 
 
-h3{
-    font-size: 1.5em;
-}
-
-h1{
-    font-size: 2.1em;
-    font-style: italic;
-}
-
-p {
-    font-size: 1em;
-}
-
- */
 
 
- /* 
-.principal {
+/* ----------- MAIN ---------- */
+.main {
     display: flex;
     flex-wrap: wrap;
-  
-} */
+    justify-content: space-around;
+    align-items: center;
+}
 
-/* aside {
-    flex-basis: 25%;
-    padding: 8px;
-    background-color: rgb(88, 139, 233);
+
+/* -------- Video y Div -------- */
+video {
+    display: flex;
     text-align: center;
-} */
+    margin: 0 auto;
 
-
-/* ------------- MAIN -------------- */
-/* main {
-    flex-basis: 75%;
-    padding: 20px;
-    padding-left: 40px ;
-    background-color: rgb(233, 220, 104);
-} */
-
-/* ------- ARTICLE ------- */
-/* main h3 {
-    text-transform: uppercase;
-    margin-top: 10px;
-    color: rgb(12, 17, 65);
-}
-
-main p {
-    font-style: italic;
-}
-
-main img {
+    min-width: 100%;
+    min-height: 100%;    
+    height: auto;
     width: 100%;
-    height: 60vh;
-    object-fit: cover;
-    object-position: center;
-    transition: 0.5s all ease-in-out;
 } 
 
-main .read-more {
-    background-color: rgb(116, 150, 139);
-    color: rgb(36, 68, 7);
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 10px;
-    display: block;
-    margin: auto;
-    text-align: center;
-    width: fit-content;
+/* --- Ajuste Videos Pantallas --- */
+@media (max-width: 720px) {
+    .div-video{
+        width: 640px;
+        height: 420px;
+        margin: 0 auto;
+        padding: 12px;
+    }   
 }
 
-main .read-more:hover{
-    background-color: blueviolet;
-}
-
-main .see-more{
-    display: block;
-    background-color: aquamarine;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    margin-top:40px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-main .see-more:hover{
-    background-color: blueviolet;
-}
-
-
-@media (max-width: 650px) {
-    .principal {
-        flex-direction: column;
+@media (max-width: 600px) {
+    .div-video{
+        width: 420px;
+        height: 240px;
+        margin: 0 auto;
+        padding: 12px;
     }
-} */
+}
 
-/* .img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: 0.5s all ease-in-out;
-} */
-
-/* img:hover {
-    transform: scale(.8);
-} */
-/*
-.contenido, .aside-title{
-    border: 2px;
-    border-style: solid;
-    border-radius: 10px;
-    padding: 10px;
-    background-image: linear-gradient(orange, rgb(240, 191, 101));
-} */
+@media (max-width: 420px) {
+    .div-video{
+        width: 240px;
+        height: 120px;
+        margin: 0 auto;
+        padding: 12px;
+    }
+}
 
 
 
-/* -------------- Botones del Carrusel ------------- */
 
-/* .carr {
-    display: flex;
-    position: relative;    
-    flex-direction: row;
+
+/* ----------- FOOTER ---------- */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* ---- Texto Footer ----- */
+.footer-p {
+    margin: 12px;
+    padding-top: 12px;
+    font-size: 14px;
+    line-height: .8;
+    color: #fffcfc;
+}
+
+/* ----- Imagenes Icons ---- */
+.img-icon{
+    margin:8px;
     align-items: center;
-    margin-top: 20px;
-} */
-
-
-/* Para diferentes pantallas */
-/* @media (max-width: 768px) {
-    .carr {
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 576px) {
-    .carr {
-        margin-top: 5px;
-    }
-}
-
-.capital{
-    font-size: 1.5em;
-    font-weight: bold;
-    height: 700;
-    color: rgb(117, 19, 19, 7);
-} */
-
-
-/* imagenes del carrusel */
-/* .img-carr{
-    height:"1em";
-    width:"3em";
-    margin:10px;
-    padding: 5px;
-    max-width: 100%;
+    width: 30px;
+    height: 30px;
     border-radius: 10px;
-}  */
+}
 
-/* ------ Img Aside ------ */
-/* @media (max-width: 620px){   400, 800  y 1000 */
-    /* aside{ display:none; }  ---> too se
-     puede asi para que no se vea*/
-    /* .image img {
-        width: 60%;
-        height: auto; */
-        /* object-fit: cover;
-        transition: 0.5s all ease-in-out; */
-/* }} */
+/* --- Footer Responsive pantallas --- */
+@media (max-width: 720px) {
+    .footer-p {
+        font-size: 14px;
+    }
+    .img-icon{
+        width: 20px;
+        height: 20px;
+    }   
+}
+
+@media (max-width: 520px) {
+    .footer-p {
+        font-size: 10px;
+    }
+    .img-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+}
