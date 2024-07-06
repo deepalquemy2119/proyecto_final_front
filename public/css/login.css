@@ -1,5 +1,7 @@
-
-
+h1, label, .btn, .form-control{ 
+    overflow-x:hidden;
+    font-family: "Montserrat", sans-serif;
+}
 /* @media (max-width: 420px) {
     .container {
         width: auto;
@@ -10,9 +12,14 @@
         max-width: 80%;
     }
 } */
-
+.btn {
+    margin: 10px;
+}
  
-
+.botones {
+    display: flex;
+    flex-wrap: nowrap
+}
 
 /* header div{
     padding: 10px;
