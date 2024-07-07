@@ -11,11 +11,11 @@ body {
 /* ---------------- HEADER ----------------- */
 
 
-.welcome {
+/* .welcome {
     margin: 0;
     padding: 0;
     color: rgb(3, 1, 1);
-}
+} */
 
 .title-h1 {
     font-size: 40px;
@@ -24,6 +24,34 @@ body {
     padding: 0;
     color: rgb(3, 1, 1);
 }
+
+/*----------- Responsive Pantallas ----------*/
+@media (max-width: 800px){
+    .title-h1 {
+        padding: 0 1rem 0 1rem;
+        font-size: 32px;
+    }
+}
+
+
+/*Tamaño para tabletas */
+@media (max-width: 720px) {
+    .title-h1 {
+        background-position: center;
+        font-size: 14px;
+    }
+}
+
+/* Tamaños para celulares */
+@media (max-width: 520px) {
+    .title-h1 {
+        background-position: center;
+        font-size: 11px;
+    }
+}
+
+
+
 
 header{
     display: flex;

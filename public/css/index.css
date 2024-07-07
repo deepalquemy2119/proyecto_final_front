@@ -65,25 +65,6 @@ video {
     height: auto;
 }
 
-/* ----- PRUEBA ------ */
-
-/* .video {
-    position: relative;
-    padding-bottom: 56.25%; 
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
-
-.video iframe, .video object, .video embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} */
-/* ----- PRUEBA ------ */
-
 
 .over {
     height: 100vh;
@@ -150,6 +131,7 @@ video {
     }
 }
 
+
 /* Tamaños para celulares */
 @media (max-width: 576px) {
     header {
@@ -157,6 +139,7 @@ video {
         font-size: 11px;
     }
 }
+
 
 /* ----- Estilos del NavBar ------ */
 
@@ -168,6 +151,8 @@ video {
     top: 0;
     margin-top: 20px;
 }
+
+
 
 .navbar a {
     padding: 12px 18px;
