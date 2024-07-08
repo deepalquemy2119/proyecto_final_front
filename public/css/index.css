@@ -15,6 +15,7 @@ body {
     margin: 0;
     padding: 0;
     color: rgb(3, 1, 1);
+    font-family: "Montserrat", sans-serif;
 }
 
 .title-h1 {
@@ -48,11 +49,11 @@ header{
     height: 100vh;
     overflow:auto; 
 }
-
+/* 
 video {
     min-width: 100%;
     min-height: 100%;    
-}
+} */
 
 .div-video {
     position: relative;
@@ -62,7 +63,7 @@ video {
 
 video {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 
@@ -80,7 +81,6 @@ video {
 
 .header-text {
     z-index: 2;
-    /* background-color: #c43569; */
     height: 117px;
     width: 100%;
 }
@@ -103,24 +103,13 @@ video {
 }
 
 
-.header-text h1 h5 p {
+.header-text h1 p {
    font-size: 1rem;
    display: block;
-   padding-bottom: 1.3rem; 
+   padding-bottom: 1rem; 
 }
 
-.header-text a {
-    background: #c43569;
-    font-size: 1.2rem;
-    padding: 1rem 2rem;
-    text-decoration: none;
-}
 
-@media (max-width: 800px){
-    .content {
-        padding: 0 3rem 0 3rem;
-    }
-}
 
 
 /*Tamaño para tabletas */
@@ -129,6 +118,22 @@ video {
         background-position: center;
         font-size: 14px;
     }
+    .title-h1 {
+        background-position: center;
+        font-size: 24px;
+    }
+    .welcome {
+        background-position: center;
+        font-size: 16px;
+    }
+    .collaboration {
+        background-position: center;
+        font-size: 16px;
+    }
+    .text-nav {
+        background-position: center;
+        font-size: 16px;
+    }
 }
 
 
@@ -136,7 +141,23 @@ video {
 @media (max-width: 576px) {
     header {
         background-position: center;
-        font-size: 11px;
+        font-size: 12px;
+    }
+    .title-h1 {
+        background-position: center;
+        font-size: 16px;
+    }
+    .welcome {
+        background-position: center;
+        font-size: 12px;
+    }
+    .collaboration {
+        background-position: center;
+        font-size: 12px;
+    }
+    .text-nav {
+        background-position: center;
+        font-size: 12px;
     }
 }
 
@@ -150,12 +171,17 @@ video {
     position: sticky;
     top: 0;
     margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 
 
 .navbar a {
-    padding: 12px 18px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     text-decoration: none;
 }
 
@@ -163,6 +189,11 @@ video {
     background-color: #ddd;
     color: black;
     font-size: 20px;
+    font-weight: 500;
+    padding-top: 5;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5;
 }
 
 .text-nav{
@@ -199,4 +230,43 @@ video {
     padding: 10px;
 }
 
+@media (max-width: 768px) {
+    .text-footer {
+        font-size: 18px;
+        padding: 5px;
+        text-align: center;    
+    }
+    .img-icon {
+        width: 25px;
+        height: 25px;
+        border-radius: 10px;
+    }
+}
 
+@media (max-width: 576px) {
+    .text-footer {
+        font-size: 14px;
+        padding: 5px;
+        text-align: center;    
+    }
+    .img-icon {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    .text-footer {
+        font-size: 11px;
+        padding: 5px;
+        text-align: center;    
+    }
+    .img-icon {
+        width: 18px;
+        height: 18px;
+        border-radius: 10px;
+    }
+           
+}
+        
