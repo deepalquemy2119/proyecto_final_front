@@ -1,216 +1,178 @@
-h1, label, .btn, .form-control{ 
-    overflow-x:hidden;
-    font-family: "Montserrat", sans-serif;
-    color: white;
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-/* @media (max-width: 420px) {
-    .container {
-        width: auto;
-        height: auto;
-        flex-direction: column;
-       }
-    .img-carr {
-        max-width: 80%;
-    }
-} */
 
 body {
     background: #000000;
     background: -webkit-linear-gradient(to bottom, #e74c3c, #000000);
     background: linear-gradient(to bottom, #e74c3c, #000000);
+    font-family: "Montserrat", sans-serif;
+    color: white;
 }
+
+
+.form, label, .btn, .form-control{ 
+    overflow-x:hidden;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+label {
+    font-size: 21px;
+}
+
+.form-control {
+    font-size: 14px;
+    padding: 5px;
+
+}
+
+/* ----------- Estilos para el footer ------------ */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.text-footer {
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+}
+
+.img-icon{
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    z-index: 5;
+}
+
 
 .btn {
-    margin: 10px;
-}
- 
-.botones {
-    display: flex;
-    flex-wrap: nowrap
-}
-
-/* header div{
-    padding: 10px;
-    border: 5px;
-    background-color: rgb(12, 61, 45, 0.7);
-    font-size: 1.2em;
-    background-image: linear-gradient(rgba(194, 62, 247, 0.340), rgb(255, 255, 255));
-    border-radius: 10px;
-    color: #fffcfc;
-} */
-
-/* 
-.enlaces{
-    padding: auto;
+    margin: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
 }
 
 
-h3{
-    font-size: 1.5em;
-}
 
-h1{
-    font-size: 2.1em;
-    font-style: italic;
-}
-
-p {
-    font-size: 1em;
-}
-
- */
-
-
- /* 
-.principal {
-    display: flex;
-    flex-wrap: wrap;
-  
-} */
-
-/* aside {
-    flex-basis: 25%;
-    padding: 8px;
-    background-color: rgb(88, 139, 233);
-    text-align: center;
-} */
-
-
-/* ------------- MAIN -------------- */
-/* main {
-    flex-basis: 75%;
-    padding: 20px;
-    padding-left: 40px ;
-    background-color: rgb(233, 220, 104);
-} */
-
-/* ------- ARTICLE ------- */
-/* main h3 {
-    text-transform: uppercase;
-    margin-top: 10px;
-    color: rgb(12, 17, 65);
-}
-
-main p {
-    font-style: italic;
-}
-
-main img {
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
-    object-position: center;
-    transition: 0.5s all ease-in-out;
-} 
-
-main .read-more {
-    background-color: rgb(116, 150, 139);
-    color: rgb(36, 68, 7);
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 10px;
-    display: block;
-    margin: auto;
-    text-align: center;
-    width: fit-content;
-}
-
-main .read-more:hover{
-    background-color: blueviolet;
-}
-
-main .see-more{
-    display: block;
-    background-color: aquamarine;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    margin-top:40px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-main .see-more:hover{
-    background-color: blueviolet;
-}
-
-
-@media (max-width: 650px) {
-    .principal {
-        flex-direction: column;
-    }
-} */
-
-/* .img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: 0.5s all ease-in-out;
-} */
-
-/* img:hover {
-    transform: scale(.8);
-} */
-/*
-.contenido, .aside-title{
-    border: 2px;
-    border-style: solid;
-    border-radius: 10px;
-    padding: 10px;
-    background-image: linear-gradient(orange, rgb(240, 191, 101));
-} */
-
-
-
-/* -------------- Botones del Carrusel ------------- */
-
-/* .carr {
-    display: flex;
-    position: relative;    
-    flex-direction: row;
-    align-items: center;
-    margin-top: 20px;
-} */
-
-
-/* Para diferentes pantallas */
-/* @media (max-width: 768px) {
-    .carr {
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 576px) {
-    .carr {
-        margin-top: 5px;
-    }
-}
-
-.capital{
-    font-size: 1.5em;
-    font-weight: bold;
-    height: 700;
-    color: rgb(117, 19, 19, 7);
-} */
-
-
-/* imagenes del carrusel */
-/* .img-carr{
-    height:"1em";
-    width:"3em";
-    margin:10px;
+/*---- Ajustes de Pantalla ----- */
+@media (max-width: 748px) {
+    h1, label, .btn, .form-control {
+    font-size: 21px;
+    margin: 2px;
     padding: 5px;
-    max-width: 100%;
-    border-radius: 10px;
-}  */
+}
 
-/* ------ Img Aside ------ */
-/* @media (max-width: 620px){   400, 800  y 1000 */
-    /* aside{ display:none; }  ---> too se
-     puede asi para que no se vea*/
-    /* .image img {
-        width: 60%;
-        height: auto; */
-        /* object-fit: cover;
-        transition: 0.5s all ease-in-out; */
-/* }} */
+    p {
+        padding: 3px;
+        margin: auto;
+        font-size: 16px;
+        align-items: center;
+    }
+   
+/* --- Estilo Navbar --- */
+    
+    a {
+        padding: 10px 14px;
+        text-decoration: none;
+        color: #333; 
+    }
+
+
+    .text-footer {
+        font-size: 14px;
+        padding: 5px;
+        text-align: center;    
+    }
+
+    .img-icon {
+        width: 25px;
+        height: 25px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    h1, label, .btn, .form-control {
+        font-size: 21px;
+        margin: 2px;
+        padding: 3px;
+    }
+
+
+    p {
+        padding: 3px;
+        margin: auto;
+        font-size: 16px;
+        align-items: center;
+    }
+
+/* --- Estilo Navbar Footer --- */
+    
+    a {
+        padding: 10px 14px;
+        text-decoration: none;
+        color: #333; 
+    }
+
+
+    .text-footer {
+        font-size: 14px;
+        padding: 5px;
+        text-align: center;    
+    }
+
+    .img-icon {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    h1, label, .btn, .form-control {
+        font-size: 16px;
+        margin: 2px;
+        padding: 3px;
+    }
+    p {
+        padding: 3px;
+        margin: auto;
+        font-size: 16px;
+        align-items: center;
+    }
+
+/* --- Estilo Navbar --- */
+    
+    a {
+        padding: 10px 14px;
+        text-decoration: none;
+        color: #333; 
+    }
+
+    .text-footer {
+        font-size: 11px;
+        padding: 5px;
+        text-align: center;    
+    }
+
+    .img-icon {
+        width: 18px;
+        height: 18px;
+        border-radius: 10px;
+
+    }
+           
+}
+
