@@ -13,3 +13,5 @@ Enlaces. Contactos. Formularios, con un toque de UIGradients.
 Uso de: Bootstrap 5.0
 ----------------------------------------
 Google Fonts. 
+----------------------------------------
+Formularios responsive. Bootstrap. 
