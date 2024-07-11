@@ -1,272 +1,227 @@
-body { 
+
+body {
     font-size: 16px;
-    overflow-x:hidden;
+    overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
-    padding: 0px;
-    margin: 0px;
-}
-
-
-
-/* ---------------- HEADER ----------------- */
-
-
-/* .welcome {
-    margin: 0;
     padding: 0;
-    color: rgb(3, 1, 1);
-} */
-
-.title-h1 {
-    font-size: 40px;
-    font-weight: 700;
     margin: 0;
-    padding: 0;
-    font-weight: 500;
-    color: rgb(3, 1, 1);
 }
 
-/*----------- Responsive Pantallas ----------*/
-@media (max-width: 800px){
-    .title-h1 {
-        padding: 0 1rem 0 1rem;
-        font-size: 32px;
-    }
-    .img-icon {
-        width: 25px;
-        height: 25px;
-    }
+.img-company {
+    display: flex;
+    width: 240px;
+    height: 100;
+    padding-bottom: 12px;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.90;
 }
 
 
-/*Tamaño para tabletas */
-@media (max-width: 720px) {
+
+/* imagenes y titulo header */
+.title-img-header {
+    align-items: column;
+    z-index: 3;
+}
+
+.img-company img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3;
+    opacity: 0.90;
+}
+
+.img-company a {
+    text-decoration: none;
+    z-index: 3;
+    opacity: 0.51;
+}
+
+
+.select-company {
+    font-weight: 300;
+    font-size: 16px;
+    z-index: 3;
+}
+
+@media (max-width: 768px) {
     .title-h1 {
-        background-position: center;
+        margin: 0;
+        padding: 0;
+        font-size: 22px; 
+    }
+
+    .select-company {
         font-size: 14px;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+
     }
-    .img-icon {
-        width: 20px;
-        height: 20px;
+
+    .img-company {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 12px;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .img-company img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
 }
 
-/* Tamaños para celulares */
 @media (max-width: 520px) {
     .title-h1 {
-        background-position: center;
+        margin: 0;
+        padding: 0;
+        font-size: 18px; 
+    }
+
+    .select-company {
+        font-size: 14px;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .img-company {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-company img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .title-h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 14px; 
+    }
+
+    .select-company {
         font-size: 11px;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+
     }
-    .img-icon {
-        width: 20px;
-        height: 20px;
+
+    .img-company {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 8px;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .img-company img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
 }
 
 
 
-
-header{
+/* Estilo para el header */
+.header-content {
+    position: relative;
+    height: calc(100vh - 100px);
     display: flex;
-    height: 100vh;
-    padding: 10;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    background-image: url('../video/video-boston.webm');
-}
-
-
-.header-text {
-    margin: 20px;
-    padding: 10px;
-    color: rgb(3, 1, 1);
-}
-
-.div-video {
-    position: absolute;
-    top: 20px;
-    left: 20;
-    width: 100%;
-    height: 100vh;
-    overflow:auto; 
-}
-
-video {
-    min-width: 100%;
-    min-height: 100%;    
-}
-
-.div-video {
-    position: relative;
-    width: 100%;
-    text-align: center;
-}
-
-video {
-    width: 100%;
-    height: auto;
-}
-
-/* ----- PRUEBA ------ */
-
-/* .video {
-    position: relative;
-    padding-bottom: 56.25%; 
-    padding-top: 30px;
-    height: 0;
     overflow: hidden;
 }
 
-.video iframe, .video object, .video embed {
+.div-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-} */
-/* ----- PRUEBA ------ */
+    z-index: -1;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.text-h1 {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+
 
 
 .over {
-    height: 100vh;
-    width: 100vw;
     position: absolute;
-    top: 20px;
+    top: 0;
     left: 0;
-    bottom: 20px;
-    background: #cbbecf;
-    z-index: 1;
-    opacity: .75;
-}
-
-.header-text {
-    z-index: 2;
-    /* background-color: #c43569; */
-    height: 117px;
     width: 100%;
-}
-
-.header-text{
-    margin-bottom: 0;
-    
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
 
 .header-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 80%;
-    max-width: 600px;
+    position: relative;
+    z-index: 1;
+    color: #fff;
 }
 
-
-.header-text h1 h5 p {
-   font-size: 1rem;
-   display: block;
-   padding-bottom: 1.3rem; 
-}
-
-.header-text a {
-    background: #c43569;
-    font-size: 1.1rem;
-    padding: 1rem;
-    text-decoration: none;
-}
-
-
-
-/*Tamaño para tabletas */
-@media (max-width: 768px) {
-    .footer p {
-        background-position: center;
-        font-size: 18px;
-    }
-    header {
-        background-position: center;
-        font-size: 14px;
-    }
-    .navbar {
-        background-position: center;
-        font-size: 18px;
-        margin-top: 5px;
-    }
-    .navbar a:hover {
-        background-color: #ddd;
-        color: black;
-            font-size: 15px;
-            padding: 5px;
-            margin: 5px;
-        }
-    
-}
-
-/* Tamaños para celulares */
-@media (max-width: 576px) {
-    .footer p {
-        background-position: center;
-        font-size: 12px;
-    }
-    
-    header {
-        background-position: center;
-        font-size: 11px;
-    }
-    .navbar {
-        background-position: center;
-        font-size: 12px;
-        margin-top: 5px;
-    }
-    .navbar a:hover {
-
-        background-color: #ddd;
-        color: black;
-        font-size: 12px;
-        padding: 5px;
-        margin: 5px;
-    }
-    
-}
-
-/* ----- Estilos del NavBar ------ */
-
-.navbar{
+/* Estilos para el navbar */
+.navbar {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: rgb(248, 193, 91);
     position: sticky;
     top: 0;
-    margin-top: 8px;
+    z-index: 10;
+    padding: 10px 0;
 }
 
 .navbar a {
-    padding: 12px;
+    padding: 8px 12px;
     text-decoration: none;
+    color: #333; 
 }
 
 .navbar a:hover {
     background-color: #ddd;
     color: black;
-    font-size: 20px;
+    font-weight: 500;
 }
 
-.text-nav{
-    color:rgb(54, 10, 10);
-    height: 500;
-}
-
-@media (max-width: 380px) {
-    .navbar {
-        flex-direction: column;
-        position: unset;
-    }
-    .navbar a {
-        font-size: 12px;
-        padding: 5px;
-        text-align: center;
-    }
+/* ----------- Estilos para el footer ------------ */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
 }
 
 .img-icon{
@@ -276,14 +231,151 @@ video {
     border-radius: 10px;
 }
 
+/*---- Ajustes de Pantalla ----- */
+@media (max-width: 768px) {
+/* --- Estilo Header Welcome --- */
+/* .welcome {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;  
+} */
 
-/* ----------- FOOTER ----------- */
-.footer {
-    background-color:black;
-    color: #fffcfc;
-    width: 600;
-    text-align: center;    
-    padding: 10px;
+.text-h1 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
 }
 
+/* .collaboration {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+} */
+
+   
+/* --- Estilo Navbar --- */
+    .navbar {
+        top: 0;
+        z-index: 10;
+        padding: 5px 0;
+    }
+
+    .text-nav {
+        font-size: 15px;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .navbar a {
+        padding: 10px 14px;
+        text-decoration: none;
+        color: #333; 
+    }
+
+    .text-footer {
+        font-size: 18px;
+        padding: 5px;
+        text-align: center;    
+    }
+    .img-icon {
+        width: 25px;
+        height: 25px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+/* --- Estilo Header Welcome --- */
+
+.text-h1 {
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+}
+
+/* .collaboration {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+} */
+
+
+/* --- Estilo Navbar --- */
+    .text-nav {
+        font-size: 12px;
+        padding: 3px;
+        text-align: center;
+    }
+    
+    .navbar {
+        top: 0;
+        z-index: 10;
+        padding: 3px 0;
+    }
+    
+    .navbar a {
+        padding: 8px 12px;
+        text-decoration: none;
+        color: #333; 
+    }
+    
+    .text-footer {
+        font-size: 14px;
+        padding: 5px;
+        text-align: center;    
+    }
+    .img-icon {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+/* --- Estilo Header Welcome --- */
+/* .welcome {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;  
+} */
+
+.text-h1 {
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* --- Estilo Navbar --- */
+    .text-nav {
+        font-size: 10px;
+        padding: 1px;
+        text-align: center;
+    }
+    
+    .navbar {
+        top: 0;
+        z-index: 10;
+        padding: 3px 0;
+    }
+    
+    .navbar a {
+        padding: 3px 8px;
+        text-decoration: none;
+        color: #333; 
+    }
+    
+    .text-footer {
+        font-size: 11px;
+        padding: 5px;
+        text-align: center;    
+    }
+    .img-icon {
+        width: 18px;
+        height: 18px;
+        border-radius: 10px;
+    }
+           
+}
 

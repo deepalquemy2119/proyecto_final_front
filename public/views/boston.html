@@ -3,21 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- ----------- Bootstrap -------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- ----------- Google Fonts ------------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- ---------- CSS local ------------ -->
+     <link rel="stylesheet" href="../css/boston.css">
+
+    <title>Boston Dynamics</title>
 </head>
 <body>
-    <h3>Boston</h3>
+    <!-- ----------------  Navbar ----------------- -->
+    <nav class="navbar">
+        <a href="./public/views/home.html"><span class="text-nav">Home</span></a>
+        <a href="https://shop.bostondynamics.com/Page/home"><span class="text-nav">Shop Merch</span></a>
+    </nav>
 
-
-
-    <footer>
-        <div class="footer">
-            <div class="row">
-                <div class="col-md-2"><br><br><br>
-                    <a class="login"  href="../../index.html">Back</a>
-                </div>
+    <!--  ---------- Contenido principal ------------- -->
+    <div class="main-content">
+        <section class="company-vision">
+        <!-- ----- Title H3 ------- -->
+            <div>
+            <h3 class="title-enlace">Boston Dynamics</h3>
             </div>
-        </div>
-    </footer>
+        <!-- ------ About Us ------ -->
+            <div>
+                <h3>About Us</h3>
+                <h5>Nuestra Mision</h5>
+                <p>La misión de Boston Dynamics es imaginar y crear robots excepcionales que enriquezcan la vida de las personas...</p>
+                <h5>Nuestra Vision</h5>
+                    <p>
+                        Estamos impulsados ​​a crear robots que se adapten perfectamente a nuestras vidas y amplíen nuestro potencial. Boston Dynamics acaba de empezar a arañar la superficie de lo que pueden hacer los robots y estamos entusiasmados de construir el futuro para hoy, mañana y más allá.
+                    </p>
+                </div>
+        
+
+        <!-- --------------- NEWS -------------- -->
+        
+            <div>
+                <h3>News</h3>
+                <div class="news-item">
+                    <h5>Algoritmos de precarga con python</h5>
+                    <p>
+                    En el campo de la biorrobótica, los algoritmos de precarga desempeñan un papel crucial al permitir que los robots biológicamente inspirados anticipen y respondan eficientemente a cambios en su entorno y en las demandas de tareas específicas. Estos algoritmos se basan en estrategias avanzadas de planificación y control que imitan procesos biológicos para mejorar la autonomía y la adaptabilidad de los robots. En Python, un lenguaje versátil y poderoso ampliamente utilizado en biorrobótica, se implementan diversos enfoques de algoritmos de precarga para optimizar el rendimiento y la eficiencia de los sistemas robóticos.
+
+                    <span>Los algoritmos de precarga en biorrobótica</span> pueden abarcar desde técnicas simples de anticipación hasta modelos complejos de aprendizaje automático y control adaptativo. Por ejemplo, los sistemas de precarga pueden usar datos sensoriales en tiempo real para ajustar dinámicamente la configuración y los parámetros de control de los actuadores del robot, anticipando movimientos o cambios en las condiciones del entorno para garantizar movimientos suaves y precisos.
+                    
+                    <span>Python ofrece bibliotecas y herramientas robustas como TensorFlow, PyTorch y Scikit-Learn</span>, que facilitan la implementación de algoritmos de aprendizaje automático y redes neuronales para la precarga adaptativa en biorrobótica. Estas técnicas permiten que los robots biológicamente inspirados aprendan y optimicen sus comportamientos a través de la interacción con su entorno, mejorando su capacidad de respuesta y adaptabilidad en escenarios dinámicos y variables.
+                    
+                    Los algoritmos de precarga también son fundamentales en <span>la biomecánica y la simulación de movimiento humano, donde se utilizan para predecir cargas y fuerzas que actúan sobre estructuras biológicas y artificiales, ayudando así en el diseño y la optimización de prótesis y dispositivos ortopédicos.</span> En Python, se pueden desarrollar modelos computacionales avanzados que integren datos biomecánicos con algoritmos de optimización para mejorar la precisión y la eficacia de los dispositivos biorrobóticos.
+                    
+                    Además, los algoritmos de precarga en biorrobótica también abordan desafíos relacionados con la energía y la eficiencia. Por ejemplo, optimizan el consumo energético al ajustar automáticamente la carga y el funcionamiento de los actuadores y sistemas mecánicos, reduciendo así la fatiga y mejorando la autonomía operativa de los robots en aplicaciones críticas como la asistencia médica y la exploración de ambientes hostiles.
+                    
+                    En resumen, los algoritmos de precarga en Python para biorrobótica representan una frontera emocionante y en evolución en la ingeniería robótica y biomecánica. Estas herramientas no solo mejoran el rendimiento y la eficiencia de los robots biológicamente inspirados, sino que también promueven avances significativos en áreas como la medicina, la rehabilitación y la exploración espacial, donde la adaptabilidad y la autonomía son clave para el éxito de las misiones y aplicaciones prácticas.
+                    
+                </p>
+                <div class="news-item">
+                    <span>Trabajo..rendimiento..fatiga..</span>
+                    <p>
+                    En el campo de la biorrobótica aplicada a los trasplantes, el rendimiento del trabajo y la gestión de la fatiga en las articulaciones son aspectos cruciales que deben abordarse con precisión y cuidado. Este campo emergente combina la ingeniería robótica con principios biomédicos para desarrollar dispositivos avanzados que puedan asistir en procedimientos quirúrgicos complejos, como los trasplantes de órganos. Aquí se exploran los desafíos y las soluciones relacionadas con el rendimiento, la fatiga y la biomecánica de las articulaciones en esta área especializada.
+
+                    <span>Rendimiento y Trabajo:</span>
+                    
+                    En la biorrobótica para trasplantes, el rendimiento del trabajo se refiere a la capacidad del dispositivo robótico para realizar tareas específicas con precisión y eficiencia. Esto incluye la capacidad de manipular órganos delicados durante la extracción y el trasplante, así como realizar suturas y otras tareas quirúrgicas críticas con la máxima precisión y seguridad. El diseño de los robots debe optimizarse para ofrecer un rendimiento que supere las capacidades humanas en términos de precisión y capacidad de repetición, garantizando al mismo tiempo una interfaz intuitiva para los cirujanos y un entorno quirúrgico seguro.
+                    
+                    <span>Fatiga en las Articulaciones:</span>
+                    
+                    La fatiga en las articulaciones de los dispositivos biorrobóticos es un problema significativo debido a la repetición de movimientos precisos y la carga durante las operaciones prolongadas. La fatiga puede afectar negativamente la precisión y la estabilidad del dispositivo, comprometiendo el éxito del trasplante. Estrategias para mitigar la fatiga incluyen el diseño ergonómico de las articulaciones y el uso de materiales ligeros pero duraderos que reducen el estrés mecánico sobre las articulaciones. Además, los algoritmos avanzados de control y planificación pueden optimizar la secuencia de movimientos para minimizar la fatiga y maximizar la eficiencia operativa del robot.
+                    
+                    <span>Biomecánica y Diseño Robótico:</span>
+                    
+                    La biomecánica juega un papel crucial en el diseño de dispositivos biorrobóticos para trasplantes, ya que determina cómo las fuerzas y los movimientos afectan las articulaciones y los tejidos circundantes durante la manipulación quirúrgica. Los ingenieros deben considerar la cinemática y la dinámica de las articulaciones para asegurar que los movimientos del robot sean naturales y compatibles con las capacidades humanas. Esto implica el uso de simulaciones computacionales avanzadas y pruebas físicas para validar el diseño antes de su implementación clínica.
+                    
+                    <span>Aplicaciones Clínicas y Avances Futuros:</span>
+                    
+                    Los avances en la biorrobótica para trasplantes están transformando la manera en que se realizan los procedimientos quirúrgicos complejos. Estos dispositivos no solo mejoran la precisión y la eficiencia de los trasplantes de órganos, sino que también ofrecen nuevas oportunidades para la investigación y el desarrollo de técnicas quirúrgicas menos invasivas. Con el tiempo, se espera que la integración de la inteligencia artificial y la realidad aumentada en la biorrobótica abra nuevas posibilidades para mejorar el rendimiento del trabajo, reducir la fatiga y mejorar los resultados clínicos para los pacientes receptores de trasplantes.
+                    
+                    En resumen, el estudio del rendimiento del trabajo y la gestión de la fatiga en las articulaciones en la biorrobótica para trasplantes es fundamental para asegurar la eficacia y la seguridad de estos dispositivos en entornos clínicos. A medida que la tecnología continúa evolucionando, es crucial abordar estos desafíos con soluciones innovadoras que promuevan mejores resultados para los pacientes y avances significativos en la medicina traslacional.
+                    </p>
+                </div>
+    </section>
+</div>
+    
+    <!-- ---------------- Footer ---------------- -->
+<footer class="footer text-center">
+    <p class="text-footer">&copy;Gonzalo Rodrigo. DeepAlquemy2024</p>
+    <!-- ----------- Iconos ------------- -->
+
+    <!-- ---- GMAIL ---- -->
+    <a href="https://www.gmail.com/" target="_blank"><img class="img-icon" src="../images/icons/gmail-foto.png" alt="gmail"></a>&nbsp;&nbsp;
+
+    <!-- ---- WHATSAPP ---- -->
+    <a href="https://www.whatsapp.com/" target="_blank"><img class="img-icon" src="../images/icons/whatsapp-foto.png" alt="whatsapp"></a>&nbsp;&nbsp;
+
+</footer>
 </body>
 </html>
