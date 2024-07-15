@@ -4,6 +4,12 @@ body {
     font-family: "Montserrat", sans-serif;
     padding: 0;
     margin: 0;
+
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
 }
 
 .navbar {
@@ -40,7 +46,7 @@ body {
     width: 100%;
 }
 
-.company-vision h3 {
+h3 {
     font-weight: 500;
     font-size: 24px;
     margin-bottom: 10px;
@@ -55,14 +61,14 @@ body {
     padding: 12px;
 }
 
-section span {
+span {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 16px;
     margin: 0;
 }
 
-.company-vision p {
+p {
     line-height: 1.2;
 }
 
@@ -107,10 +113,238 @@ section span {
 @media (max-width: 768px) {
     .main-content {
         flex-direction: column;
+        padding: 14px;
     }
 
-    .company-vision, .news {
-        width: 100%;
-        margin-bottom: 20px;
+    .navbar {
+        padding: 8px 0;
     }
+    
+    .navbar a {
+        padding: 4px 8px;
+
+    }
+
+    .text-nav {
+        flex-direction: column;
+        font-size: 21px;
+
+    }
+
+    .title-enlace {
+        font-size: 26px;
+        margin-bottom: 16px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .main-content h5 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 21px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    p {
+        line-height: 1.2;
+        font-size: 14px;
+    }
+
+    .news-item {
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    span {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .footer {
+        padding: 18px 0;
+        text-align: center;
+    }
+
+
+    .text-footer {
+        flex-direction: column;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .img-icon {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
+
+
 }
+
+@media (max-width: 560px) {
+    .main-content {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .navbar {
+        padding: 6px 0;
+    }
+    
+    .navbar a {
+        padding: 2px 6px;
+
+    }
+
+    .text-nav {
+        flex-direction: column;
+        font-size: 18px;
+
+    }
+
+    .title-enlace {
+        font-size: 21px;
+        margin-bottom: 14px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .main-content h5 {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    p {
+        line-height: 1;
+        font-size: 12px;
+    }
+
+    .news-item {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    span {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .footer {
+        padding: 14px 0;
+        text-align: center;
+    }
+
+
+    .text-footer {
+        flex-direction: column;
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+    .img-icon {
+        width: 20px;
+        height: 20px;
+        margin: 0 3px;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+    .main-content {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar {
+        padding: 4px 0;
+    }
+    
+    .navbar a {
+        padding: 2px 4px;
+
+    }
+
+    .text-nav {
+        flex-direction: column;
+        font-size: 16px;
+
+    }
+
+    .title-enlace {
+        font-size: 18px;
+        margin-bottom: 12px;
+        padding: 6px;
+        text-align: center;
+    }
+
+    .main-content h5 {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 6px;
+        text-align: center;
+    }
+
+    p {
+        line-height: 1;
+        font-size: 12px;
+    }
+
+    .news-item {
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    span {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+        margin: 0;
+    }
+
+    .footer {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+
+    .text-footer {
+        flex-direction: column;
+        font-size: 11px;
+        margin-top: 6px;
+    }
+
+    .img-icon {
+        width: 20px;
+        height: 20px;
+        border-radius: 6px;
+        margin: 0 3px;
+    }
+
+
+}
+
