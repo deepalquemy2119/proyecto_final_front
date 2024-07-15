@@ -27,7 +27,7 @@ background: linear-gradient(to top, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Fir
 }
 
 .navbar a {
-    padding: 8px 12px;
+    padding: 8px 10px;
     text-decoration: none;
     color: #333; 
 }
@@ -131,6 +131,7 @@ p {
     .text-nav {
         flex-direction: column;
         font-size: 21px;
+        font-weight: 500;
 
     }
 
@@ -204,6 +205,7 @@ p {
     
     .navbar a {
         padding: 2px 6px;
+        font-weight: 500;
 
     }
 
@@ -289,6 +291,7 @@ p {
     .text-nav {
         flex-direction: column;
         font-size: 16px;
+        font-weight: 500;
 
     }
 
