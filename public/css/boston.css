@@ -16,7 +16,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(248, 193, 91);
+    background: #fceabb;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     position: sticky;
     top: 0;
     z-index: 10;
