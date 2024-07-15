@@ -26,6 +26,13 @@ background: linear-gradient(to top, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Fir
     padding: 10px 0;
 }
 
+.text-nav {
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+}
+
+
 .navbar a {
     padding: 8px 10px;
     text-decoration: none;
@@ -131,7 +138,6 @@ p {
     .text-nav {
         flex-direction: column;
         font-size: 21px;
-        font-weight: 500;
 
     }
 
@@ -291,7 +297,6 @@ p {
     .text-nav {
         flex-direction: column;
         font-size: 16px;
-        font-weight: 500;
 
     }
 
